@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="utilizadores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="utilizador" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="primeiroNome" type="xs:string" />
+              <xs:element name="ultimoNome" type="xs:string" />
+              <xs:element name="email" type="xs:string" />
+              <xs:element name="password" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
