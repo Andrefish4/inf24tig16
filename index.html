@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EducaWeb &bull; Login</title>
+  <link rel="stylesheet" href="estilos/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="login-container">
+    <header class="login-header">
+      <h1>Bem-vindo à <span class="marca">EducaWeb</span>!</h1>
+    </header>
+
+    <section class="login-box">
+      <form id="loginForm" class="login-form">
+        <fieldset>
+          <legend>Iniciar Sessão</legend>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="aluno@umaia.pt" required />
+
+          <label for="password">Palavra-passe:</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" required />
+
+          <button type="submit" class="btn-login">Entrar</button>
+        </fieldset>
+      </form>
+
+      <div class="login-links">
+        <p><a href="criarConta.html">Criar conta</a></p>
+        <p><a href="recuperarSenha.html">Esqueci-me da palavra-passe</a></p>
+      </div>
+    </section>
+
+    <footer class="login-footer">
+      <p>&copy; 2025 &bull; EducaWeb &bull; Desenvolvido por João Oliveira, André Pereira e Ricardo Dias.</p>
+    </footer>
+  </main>
+
+  <script src="scripts/login.js"></script>
+</body>
+</html>
