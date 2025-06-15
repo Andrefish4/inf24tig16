@@ -1,4 +1,16 @@
+/* Estilos Gerais */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
 
+main {
+    padding: 40px;
+}
+
+/* Estilos index.html */
 
 .login-container {
     display: flex;
@@ -84,12 +96,137 @@
     background-color: black;
 }
 
+/* Estilos sobre.html */
+
+.sobre-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    z-index: 1000;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-nos {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+main.sobre-main {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.text-cell {
+    width: 60%;
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+.cards-table {
+    width: 90%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    border-spacing: 30px;
+    table-layout: fixed;
+}
+
+.cards-table td {
+    width: 33.33%;
+    height: 270px;
+    vertical-align: top;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+.cards-table img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.cards-table strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.cards-table em {
+    display: block;
+    font-style: italic;
+    margin-top: 10px;
+    color: #555;
+}
+
+footer.rodape {
+    position: relative;
+    width: 100%;
+    background-color: #222;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.rodape-links {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.rodape-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.rodape-links span {
+    display: block;
+    margin-top: 5px;
+}
+
+.noticia-bloco {
+  display: flex;
+  width: 60%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.noticia-imagem {
+  flex: 1;
+  display: flex;
+}
+
+.noticia-imagem img {
+  width: 100%;
+  max-height: 200px;
+  object-fit:scale-down;
+  border-radius: 0;
+}
 
 
+.noticia-texto {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.noticia-texto h2 {
+  margin: 0;
+}
 
-
-
-
-
-
+.noticia-texto p {
+  margin: 10px 0 0 0;
+}
