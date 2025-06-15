@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utilizadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="utilizadores.xsd">
+  <utilizador>
+    <primeiroNome>Ricardo</primeiroNome>
+    <ultimoNome>Dias</ultimoNome>
+    <email>ricardo@edu.pt</email>
+    <password>1234</password>
+  </utilizador>
+  
+  <utilizador>
+    <primeiroNome>João</primeiroNome>
+    <ultimoNome>Oliveira</ultimoNome>
+    <email>A046461@umaia.pt</email>
+    <password>1234</password>
+  </utilizador>
+
+  <utilizador>
+    <primeiroNome>André</primeiroNome>
+    <ultimoNome>Pereira</ultimoNome>
+    <email>A046761@umaia.pt</email>
+    <password>1234</password>
+  </utilizador>
+  
+</utilizadores>
