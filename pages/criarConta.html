@@ -1,54 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EducaWeb &bull; Criar Conta</title>
-  <link rel="stylesheet" href="estilos/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins&display=swap" rel="stylesheet">
-</head>
-<body>
-  <main class="login-container">
-    <header class="login-header">
-      <h1>Bem-vindo à <span class="marca">EducaWeb</span>!</h1>
-      <p>Crie a sua conta para começar a usar</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EducaWeb &bull; Criar Conta</title>
+    <link rel="shortcut icon" href="/assets/Logotipo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img class="background" src="/assets/background.png" alt="EducaWeb" />
+    <main class="login-container">
+      <section class="login-box">
+        <form id="registoForm" class="login-form">
+          <fieldset class="border-field">
+            <header class="login-header">
+              <img class="logo" src="/assets/Logotipo.png" alt="EducaWeb" />
+              <h1 class="login-h1">
+                Bem-vindo à <span class="marca">EducaWeb</span>!
+              </h1>
+            </header>
 
-    <section class="login-box">
-      <form id="registoForm" class="login-form">
-        <fieldset>
-          <legend>Criar Conta</legend>
+            <span class="separator"></span>
 
-          <label for="primeiroNome">Primeiro nome:</label>
-          <input type="text" id="primeiroNome" name="primeiroNome" placeholder="João" required />
+            <h1 class="login-h1">Criar Conta</h1>
 
-          <label for="ultimoNome">Último nome:</label>
-          <input type="text" id="ultimoNome" name="ultimoNome" placeholder="Silva" required />
+            <label class="label-form" for="primeiroNome">Primeiro nome:</label>
+            <input
+              class="input"
+              type="text"
+              id="primeiroNome"
+              name="primeiroNome"
+              placeholder="Tomás"
+              required
+            />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="aluno@umaia.pt" required />
+            <label class="label-form" for="ultimoNome">Último nome:</label>
+            <input
+              class="input"
+              type="text"
+              id="ultimoNome"
+              name="ultimoNome"
+              placeholder="Silva"
+              required
+            />
 
-          <label for="password">Palavra-passe:</label>
-          <input type="password" id="password" name="password" placeholder="••••••••" required />
+            <label class="label-form" for="email">Email:</label>
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="aluno@umaia.pt"
+              required
+            />
 
-          <label for="confirmPassword">Confirmar palavra-passe:</label>
-          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••" required />
+            <label class="label-form" for="password">Palavra-passe:</label>
+            <input
+              class="input"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="••••••••"
+              required
+            />
 
-          <button type="submit" class="btn-login">Criar Conta</button>
-        </fieldset>
-      </form>
+            <label class="label-form" for="confirmPassword">Confirmar palavra-passe:</label>
+            <input
+              class="input"
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="••••••••"
+              required
+            />
 
-      <div class="login-links">
-        <p><a href="index.html">Já tenho conta</a></p>
-      </div>
-    </section>
+            <button type="submit" class="btn-login">Criar Conta</button>
+            <a href="index.html">
+              <button class="btn-login" type="button">Já tenho conta</button>
+            </a>
+          </fieldset>
+        </form>
+      </section>
 
-    <footer class="login-footer">
-      <p>&copy; 2025 &bull; EducaWeb &bull; Desenvolvido por João Oliveira, André Pereira e Ricardo Dias.</p>
-    </footer>
-  </main>
+      <footer class="login-footer">
+        <p>
+          &copy; 2025 &bull; EducaWeb &bull; Desenvolvido por João Oliveira, André Pereira e Ricardo Dias.
+        </p>
+      </footer>
+    </main>
 
-  <script src="scripts/registar.js"></script>
-</body>
+  </body>
 </html>
