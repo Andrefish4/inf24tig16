@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const passwordInput = document.getElementById('password').value;
 
     try {
-      const response = await fetch('../data/utilizadores.xml');
+      const response = await fetch('/data/utilizadores.xml');
       const xmlText = await response.text();
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
@@ -22,16 +22,23 @@ document.addEventListener('DOMContentLoaded', function () {
         const password = utilizadores[i].getElementsByTagName('password')[0].textContent;
 
         if (email === emailInput && password === passwordInput) {
-          loginValido = true;
+          const primeiroNome = utilizadores[i].getElementsByTagName('primeiroNome')[0].textContent;
+          const ultimoNome = utilizadores[i].getElementsByTagName('ultimoNome')[0].textContent;
+          const imagem = utilizadores[i].getElementsByTagName('imagem')[0].textContent;
+      
+          // Guardar dados no localStorage
+          localStorage.setItem('userLoggedIn', 'true');
+          localStorage.setItem('userEmail', email);
+          localStorage.setItem('userName', primeiroNome + " " + ultimoNome);
+          localStorage.setItem('userImage', imagem);
+      
+          window.location.href = 'disciplinas.html';
           break;
+        } else {
+          alert('Credenciais inválidas. Tente novamente.');
         }
       }
 
-      if (loginValido) {
-        window.location.href = 'disciplinas.html';
-      } else {
-        alert('Credenciais inválidas. Tente novamente.');
-      }
     } catch (error) {
       console.error('Erro ao carregar XML:', error);
       alert('Erro ao tentar iniciar sessão.');

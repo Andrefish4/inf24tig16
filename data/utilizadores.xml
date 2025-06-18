@@ -2,18 +2,21 @@
 <utilizadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:noNamespaceSchemaLocation="utilizadores.xsd">
   <utilizador>
+    <imagem>andre.jpeg</imagem>
     <primeiroNome>André</primeiroNome>
     <ultimoNome>Pereira</ultimoNome>
     <email>andre@umaia.pt</email>
     <password>admin</password>
   </utilizador>
   <utilizador>
+    <imagem>joão.jpg</imagem>
     <primeiroNome>João</primeiroNome>
     <ultimoNome>Oliveira</ultimoNome>
     <email>joao@umaia.pt</email>
     <password>admin</password>
   </utilizador>
   <utilizador>
+    <imagem>ricardo.png</imagem>
     <primeiroNome>Ricardo</primeiroNome>
     <ultimoNome>Dias</ultimoNome>
     <email>ricardo@umaia.pt</email>

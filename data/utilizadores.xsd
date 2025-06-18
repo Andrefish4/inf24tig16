@@ -7,6 +7,7 @@
         <xs:element name="utilizador" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
+              <xs:element name="imagem" type="xs:string" />
               <xs:element name="primeiroNome" type="xs:string"/>
               <xs:element name="ultimoNome" type="xs:string"/>
               <xs:element name="email" type="xs:string"/>
