@@ -33,7 +33,7 @@ fetch('/components/navbar.html')
 
         document.querySelector('.logout-button').addEventListener('click', () => {
           localStorage.clear();
-          window.location.reload();
+          window.location.href="/pages";
         });
       }
     }

@@ -186,6 +186,12 @@ main {
     background-color: black;
 }
 
+.separator-footer {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
 /* Estilos sobre.html */
 
 .sobre-header {
@@ -512,3 +518,46 @@ main.sobre-main {
     background-color: oklch(0.704 0.191 22.216);
     opacity: 90%;
 }
+
+@media (max-width: 1024px) {
+    .disciplinas-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .disciplinas-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .noticia-bloco {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .cards-table, .cards-table tr, .cards-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .cards-table td {
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .user-avatar {
+        display: none;
+    }
+      
+    .user-name {
+        display: none;
+    }
+
+    .disciplinas-container {
+      grid-template-columns: 1fr;
+    }
+  }
