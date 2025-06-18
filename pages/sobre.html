@@ -7,9 +7,8 @@
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <header class="sobre-header">
-    <h1 class="sobre-nos">Sobre nós</h1>
-  </header>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
 
   <main class="main-com-topo-fixo">
     <div class="noticia-bloco">
@@ -28,32 +27,35 @@
       <tr>
         <td>
           <img src="../assets/nerd.png" alt="João Oliveira"><br>
-          <strong>João Oliveira</strong><br>
-          Nº 46461<br>
+          <strong>João Oliveira</strong>
+          <p>Nº 46461</p>
           <em>Sou o <b>João Oliveira</b>, tenho 18 anos e gosto de jogar nos meus tempos livres.</em>
         </td>
         <td>
-          <img src="../assets/nerd.png" alt="André Pereira"><br>
-          <strong>André Pereira</strong><br>
-          Nº 46761<br>
-          <em>Sou o <b>André Pereira</b>, tenho 19 anos e adoro programar. Para quem quiser, eu tenho um website que podem aceder <a href="https://andre-pereira.pt/" target="_blank">aqui.</a></em>
+          <img src="../assets/andre.jpeg" alt="André Pereira"><br>
+          <strong>André Pereira</strong>
+          <p>Nº 46761</p>
+          <em>Sou o <b>André Pereira</b>, tenho 19 anos e desenvolvo Websites/Aplicações. Tenho um website pessoal que podem saber mais acerca de mim.</em>
+          <br />
+          <a href="https://andre-pereira.pt" target="_blank" class="profile-button">
+            <span>Website</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          </a>
         </td>
         <td>
           <img src="../assets/ricardo.png" alt="Ricardo Dias"><br>
-          <strong>Ricardo Dias</strong><br>
-          Nº 46068<br>
+          <strong>Ricardo Dias</strong>
+          <p>Nº 46068</p>
           <em>Sou o <b>Ricardo Dias</b>, tenho 18 anos e pretendo desenvolver websites e/ou aplicações.</em>
         </td>
       </tr>
     </table>
 
-    <footer class="rodape">
-      <div class="rodape-links">
-        <a href="https://github.com/Andrefish4/ensino-ti" target="_blank">GitHub</a> |
-        <a href="mailto:educaweb@escola.pt">Email</a>
-        <span>&copy; 2025 &bull; EducaWeb &bull; Desenvolvido por João Oliveira, André Pereira e Ricardo Dias.</span>
-      </div>
-    </footer>
   </main>
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  
+  <script src="/scripts/navbar.js"></script>
+  <script src="/scripts/footer.js"></script>
 </body>
 </html>

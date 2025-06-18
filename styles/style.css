@@ -4,10 +4,103 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     padding: 40px;
+}
+
+.number-umaia {
+    font-weight: 400;
+    font-size: 14px;
+    color: oklch(20.5% 0 0);
+}
+
+.profile-button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: oklch(20.5% 0 0);
+    color: white;
+    font-weight: 700;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid oklch(26.9% 0 0);
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.profile-button:hover {
+    background-color: oklch(26.9% 0 0);
+}
+
+/* Estilos Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: oklch(20.5% 0 0);
+}
+
+.navbar-logo {
+    flex: 1;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+    flex: 2;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: oklch(98.5% 0 0);
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: oklch(90.0% 0 0);
+}
+
+.active-link {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: white;
+}
+
+.navbar-action {
+    flex: 1;
+    text-align: right;
+}
+
+.login-button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
 }
 
 /* Estilos index.html */
@@ -73,10 +166,6 @@ main {
     border-radius: 5px;
 }
 
-.label-form {
-    
-}
-
 .btn-login {
     border: 2px solid;
     border-color: oklch(14.5% 0 0);
@@ -92,6 +181,7 @@ main {
 }
 
 .separator {
+    width: 100%;
     height: 1px;
     background-color: black;
 }
@@ -168,28 +258,76 @@ main.sobre-main {
     color: #555;
 }
 
-footer.rodape {
-    position: relative;
-    width: 100%;
-    background-color: #222;
-    color: #ffffff;
-    padding: 20px 0;
+.social-button {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    background-color: oklch(16.5% 0 0);
+    color: white;
+    padding: 12px;
+    border: 1px solid oklch(26.9% 0 0);
+    border-radius: 9999px;
+    text-decoration: none;
 }
 
-.rodape-links {
-    text-align: center;
+
+.social-button:hover {
+    background-color: oklch(20.9% 0 0);
+}
+
+.footer-container {
+    margin-top: auto;
+}
+
+.footer {
+    display: flex;
+    background-color: oklch(20.5% 0 0);
+    color: #ffffff;
+    padding: 1rem 2rem;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
     font-size: 0.9em;
 }
 
-.rodape-links a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 5px;
+.footer-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
-.rodape-links span {
-    display: block;
-    margin-top: 5px;
+.footer-pages-container {
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+}
+
+.footer-pages-container p {
+    margin: 8px 0px;
+    color: white;
+    font-weight: 700;
+}
+
+.footer-pages {
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-pages a {
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-pages a:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .noticia-bloco {
@@ -229,4 +367,54 @@ footer.rodape {
 
 .noticia-texto p {
   margin: 10px 0 0 0;
+}
+
+.disciplina-title {
+    font-size: 35px;
+    font-weight: 800;
+    padding-bottom: 4px;
+    border-bottom: 1px solid;
+}
+
+.disciplinas-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.disciplina-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.disciplina-card-info {
+    padding: 10px 15px;
+}
+
+.disciplina-card img {
+    width: 100%;
+    height: 150px; /* ajusta conforme necessário */
+    overflow: hidden;
+    border-radius: 8px 8px 0px 0px;
+    user-select: none;
+}
+
+.disciplina-card a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.disciplina-card a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.disciplina-card p {
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
