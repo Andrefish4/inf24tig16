@@ -40,7 +40,7 @@ A organização das páginas é feita com layout responsivo, utilizando media qu
 
 ## 3. Product – Produto
 
-### 📌 Descrição Técnica
+### Descrição Técnica
 
 O site é composto por:
 - HTML5 com marcação semântica (`header`, `section`, `article`, `nav`, `main`, `footer`)
@@ -55,19 +55,19 @@ O site é composto por:
   - carregamento de dados de um ficheiro XML (`disciplinas.xml`) para gerar dinamicamente as disciplinas
   - manipulação de DOM (esconder, mostrar elementos)
 
-### 📄 XML + XSD
+### XML + XSD
 Foram incluídos dois conjuntos de ficheiros:
 - `disciplinas.xml` + `disciplinas.xsd`
 - `utilizadores.xml` + `utilizadores.xsd`
 
 A página `disciplinas.html` integra o conteúdo de `disciplinas.xml` dinamicamente usando JavaScript, conforme pedido no enunciado.
 
-### 🌐 Site Publicado
+### Site Publicado
 
 O site encontra-se disponível em:
-👉 [https://bright-beignet-49dc5a.netlify.app/pages/](https://bright-beignet-49dc5a.netlify.app/pages/)
+[https://bright-beignet-49dc5a.netlify.app/pages/](https://bright-beignet-49dc5a.netlify.app/pages/)
 
-### 🛠️ Instruções de Instalação
+### Instruções de Instalação
 
 **Local:**
 - Abrir o ficheiro `index.html` na pasta `/pages` com qualquer browser
@@ -77,39 +77,36 @@ O site encontra-se disponível em:
 - O repositório GitHub foi conectado à Netlify
 - O site é automaticamente atualizado a cada _push_ no repositório
 
-### 🔒 Regras de Utilização
+### Regras de Utilização
 
 Não são necessárias credenciais ou autenticação. O site é público.
 
-### 🧭 Ajuda à Navegação
+### Ajuda à Navegação
 
 A navegação é simples e intuitiva:
 - O menu superior indica sempre a localização
 - As disciplinas são clicáveis e levam à página de detalhe
 - Tooltips e marcações de destaque são usadas nos textos
 
-### ✅ Validações
+### Validações
 
 - Os formulários possuem validação HTML5 básica (ex: campos obrigatórios, e-mail válido)
 - Os ficheiros HTML e CSS foram validados com o [W3C Validator](https://validator.w3.org/) e [CSS Validator](https://jigsaw.w3.org/css-validator/)
 - A validação XML foi testada com o schema `.xsd`
 
-### 🔧 Implementação de Requisitos
-
-| Requisito | Cumprido |
-|----------|----------|
-| 4 páginas HTML com estrutura semântica | ✅ |
-| Tabela com `thead`, `tbody`, `tfoot`, `rowspan`, `colspan` | ✅ |
-| Listas aninhadas (ordenadas, não ordenadas, definições) | ✅ |
-| Destaque de texto com `em`, `strong`, `mark` | ✅ |
-| Imagens com `img`, `figure`, `figcaption` + via CSS | ✅ |
-| Links internos e externos | ✅ |
-| Formulário com validação | ✅ |
-| CSS com seletores variados e media queries | ✅ |
-| Flutuação, posicionamento, substituição por imagem | ✅ |
-| Manipulação DOM com JS | ✅ |
-| Integração dinâmica de XML com JS | ✅ |
-| Site publicado em Netlify | ✅ |
+### Implementação de Requisitos
+4 páginas HTML com estrutura semântica
+Tabela com `thead`, `tbody`, `tfoot`, `rowspan`, `colspan` 
+Listas aninhadas (ordenadas, não ordenadas, definições) 
+Destaque de texto com `em`, `strong`, `mark`
+Imagens com `img`, `figure`, `figcaption` + via CSS
+Links internos e externos 
+Formulário com validação 
+CSS com seletores variados e media queries
+Flutuação, posicionamento, substituição por imagem 
+Manipulação DOM com JS
+Integração dinâmica de XML com JS
+Site publicado em Netlify
 
 ---
 
