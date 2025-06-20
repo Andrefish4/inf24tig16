@@ -2,6 +2,7 @@
 **Univ. da Maia – Licenciatura em Informática, Tecnologias e Internet**  
 **Unidade Curricular: Desenvolvimento Web – Época Especial 2024/25**  
 **Grupo: inf24tig16**
+**Membros do grupo: André Pereira (A046761), João Oliveira(A046461), Ricardo Dias (A047068)**
 
 ---
 
