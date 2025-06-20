@@ -1,7 +1,7 @@
 # Relatório do Projeto - Trabalho Prático Final  
 **Univ. da Maia – Licenciatura em Informática, Tecnologias e Internet**  
 **Unidade Curricular: Desenvolvimento Web – Época Especial 2024/25**  
-**Grupo: a definir (ex: inf24tigXX)**
+**Grupo: inf24tig16**
 
 ---
 
